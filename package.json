@@ -1,0 +1,38 @@
+{
+  "name": "unofficial-klap-sdk",
+  "version": "1.0.0",
+  "description": "Código fuente no oficial de Klap SDK en NodeJs",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist/ && tsc",
+    "test": "jest --collect-coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilio-ferrer/unofficial-klap-sdk-node.git"
+  },
+  "keywords": [
+    "klap",
+    "sdk",
+    "klap-sdk",
+    "checkout",
+    "oneclick",
+    "klap-developers"
+  ],
+  "author": "Emilio Ferrer <emilio.ferrert@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilio-ferrer/unofficial-klap-sdk-node/issues"
+  },
+  "homepage": "https://github.com/emilio-ferrer/unofficial-klap-sdk-node#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "jest": "^27.0.4",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
+}
