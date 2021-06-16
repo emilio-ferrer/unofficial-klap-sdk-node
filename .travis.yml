@@ -1,0 +1,27 @@
+language: node_js
+node_js:
+  - 11
+  - 12
+  - 13
+  - 14
+cache:
+  directories:
+    - node_modules
+before_install:
+  - npm update
+install:
+  - npm install
+script:
+  - npm test
+before_deploy:
+  - npm run build
+deploy:
+  provider: npm
+  name: "Versión $TRAVIS_TAG"
+  email: emilio.ferrert+github@gmail.com
+  api_key: "YOUR_AUTH_TOKEN"
+  skip_cleanup: true
+  on:
+    branch: master
+    tags: true
+    repo: emilio-ferrer/unofficial-klap-sdk-nodejs
