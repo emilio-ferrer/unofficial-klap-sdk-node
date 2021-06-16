@@ -19,9 +19,8 @@ before_deploy:
 - npm run build
 deploy:
   provider: npm
-  name: Version $TRAVIS_TAG
   email: emilio.ferrert+github@gmail.com
-  api_key:
+  api_token:
     secure: A2LXfOZOi97dr+V4aPXKhALLS2xZWvPoZZLEYufEQ3qY603cEpIJl2gsi8u4rV3Zn7D5xMmkeKXImpx1Lv92krrkAJSYV5m90IMfR6cowuqCPGf1F1cudtxTgznMnNKqq8/nTJnKP6plNFUdtYSzFQxgDC1e++TH73nqYnWvVlBFU9mjDbG4sSAasITv9ZbfnBAUG3JkSo1BgrO1FoDG5BgQfzFcIu6JUz0bJBJPVJUTCU6iPL6T5IeYi+I3yqZShQr1NAPElJ4lwgcsZidxnZzNghOFqahfdFNhsNGXq4CfoNsIr5R3X6dBpSHEPv8G+4DHOhiXYELIjh8B1SA6UbYwfvLuBmWKtZmfJU/Zi7ZI5lKow/xJhQFndWtYXW+YJToZfJdbs8C2C21FigFXWv8KjXHMiioSBPsytlJV3qdSoKjqRuT8r62AkHlBZsY/nlQnQd8DnPN4CO40YuBTp8A/AY7+oO5YsMTuMdNfic7HVhTvJXMoYlfkZfRzqORS8GgNVHgDo1S3XWurcpsuhaiV47srClVgFB9+1nW7OBkSrj7kOW8vTmhoWE1c4LV/xsdhbeCtrPLjVwS2TgGU+60GYIuLpH0QLP3U3xt8i5yAxSY8NKD+WTBPatte9h6kGbHw7tuJfX4eQNdtrmiBzrVujtNLN8b2saiMFu8u7fM=
   cleanup: true
   on:
