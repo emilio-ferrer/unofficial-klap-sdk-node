@@ -20,8 +20,8 @@ before_deploy:
 deploy:
   provider: npm
   email: emilio.ferrert+github@gmail.com
-  api_key:
-    secure: $NPM_TOKEN
+  api_token:
+    secure: "$NPM_TOKEN"
   cleanup: true
   on:
     branch: master
