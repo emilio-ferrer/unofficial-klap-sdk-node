@@ -16,8 +16,9 @@ before_deploy:
 - npm run build
 deploy:
   provider: npm
-  email: '$NPM_EMAIL'
-  api_key: '$NPM_API_TOKEN'
+  email: emilio.ferrert@gmail.com
+  api_token:
+    secure: SWHse4VPr5yOk437w2sbp1d77gNuwIXO0UMlIreSEao3w1ZEQRQFdL6ZoEsfY8vqEVDGAEiHJ3x14pPKySzw9uT/dBCU5zmZm6gPLWYqTAerE0ip+sm5oNpsAw2ptv1T5njYPaKyWMQ2dLMG6iC8Jf0AI3JXblE5Ia9mi7W2yMVYvqXui1uSFUKQmoEHptHPgJUq8XgWu+Xi4ccZ75dJ84JY7Im+ag5hZ7YHoWdUjV2jlS4+Y2AxvY/VcHn7cHugfiJDI8x8YJHyQSYPKefmPyR1SBZFQ/M7Kb9rmPap415ZUod4VlZxkCky2ri8tm/O/0FVKfmvAJdgrJ8NfemdVSFIqQldllUi8asgDfoHEJqckBgDxscPZo6uWqSl7+ql69ms8kPsiGGl+JymZ1D4E5zBwS23y/eDfcwBIPIy+ki82SteFYuYO/BETZyx6MqDbbFB56f+SxwGvtnsREwfSCaypZRWyjBKhmrrKkiESlZ9Upqz/jaVPGEuP8mq4i73dBaSczfNKicTU5rt7S1/NsGFLwzUMo34naRnsP32Dq0PotqFbGSibCEPY/E5mZNl3S/UYYsuW+OfMOK02twJY6sv4yKs9JRWfMa0q6oZqkGWZsfA0kS6+CQ31IxVCDvmwza+l97jzxhlkSi475e2qdddvuHBxSHlZ7AJaEf32Gc=
   tag: beta
   cleanup: true
   on:
