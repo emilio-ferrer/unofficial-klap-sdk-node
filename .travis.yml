@@ -16,9 +16,9 @@ before_deploy:
 - npm run build
 deploy:
   provider: npm
-  email: "$NPM_EMAIL"
-  api_token:
-    secure: "$NPM_API_TOKEN"
+  email: '$NPM_EMAIL'
+  api_key: '$NPM_API_TOKEN'
+  tag: beta
   cleanup: true
   on:
     branch: master
