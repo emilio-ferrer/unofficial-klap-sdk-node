@@ -17,8 +17,7 @@ before_deploy:
 deploy:
   provider: npm
   email: '$NPM_EMAIL'
-  api_token:
-    secure: '$NPM_API_TOKEN'
+  api_key: '$NPM_API_TOKEN'
   tag: beta
   cleanup: true
   on:
